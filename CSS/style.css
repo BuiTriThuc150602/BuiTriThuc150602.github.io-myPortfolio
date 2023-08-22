@@ -34,7 +34,6 @@ body {
 header {
   position: absolute;
   width: 100%;
-  /* border: .5px solid red ; */
 }
 
 :root {
@@ -225,10 +224,54 @@ header {
   }
   .banner_img{
     position: absolute;
-    width: 100%;
+    width: 70%;
     margin-top: initial;
   }
   .banner_btn{
     margin-left: 90px;
   }
 }
+
+/* things */
+
+#things{
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 50px;
+  color: var(--gray);
+}
+
+.things_dec{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%); 
+  z-index: -1;
+}
+#things h2{
+  text-align: center;
+  color: var(--gray);
+  margin-top: 50px;
+}
+.things_item{
+  margin: 50px 0;
+}
+.things_item p{
+  margin: 0 auto;
+  font-weight: 400;
+  max-width: 300px;
+  line-height: 35px;
+  text-align: center;
+}
+@media (min-width:62em) {
+  .things_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0 ;
+  }
+  .things_item img{
+    width: 70%;
+  }
+}
+
