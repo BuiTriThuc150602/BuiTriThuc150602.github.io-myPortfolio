@@ -211,6 +211,7 @@ header {
 }
 .banner_socials a{
   transition: var(--smooth);
+  color: var(--gray);
 }
 .banner_socials a:hover{
   transition: var(--smooth);
@@ -274,4 +275,39 @@ header {
     width: 70%;
   }
 }
+hr{
+  max-width: 300px;
+  margin: 50px auto;
+  size: 30px;
+}
+#skills{
+  color: var(--gray) ;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  border: .5px solid #3f3d56;
+}
+#skills h2{
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+}
+.skill_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 10px ;
+}
+.skill_item{
+  padding: 10px;
+  font-weight: 300;
+  transition: var(--smooth);
+}
+
+.skill_item:hover{
+  color: var(--green-l);
+  transform: translateY(-20%);
+  transition: var(--smooth);
+}
+
 
