@@ -257,6 +257,7 @@ header {
 .things_item {
   margin: 50px 0;
 }
+
 .things_item p {
   margin: 30px auto;
   font-weight: 400;
@@ -271,6 +272,7 @@ header {
     align-items: center;
     margin: 70px 0;
   }
+  
   .things_item img {
     width: 70%;
   }
@@ -299,21 +301,27 @@ hr {
   align-items: baseline;
   margin: 10px;
 }
-.skill_dec{
+.skill_dec {
   position: absolute;
-  opacity: .5;
+  opacity: 0.5;
   z-index: -1;
 }
 .skill_item {
-  list-style: square;
+  list-style: none;
   padding: 10px;
   margin: 30px 5px;
   font-weight: 300;
   transition: var(--smooth);
   border-bottom: 0.1px solid var(--gray);
 }
+.skill_item span {
+  font-weight: 500;
+  margin-left: 30px;
+  color: initial;
+}
 
-.skill_item:hover {
+.skill_item:hover,
+.skill_item:hover span {
   color: var(--green-l);
   transform: translateY(-20%);
   transition: var(--smooth);
@@ -324,13 +332,10 @@ hr {
     text-align: start;
     padding: 5px;
   }
-  .skill_list{
+  .skill_list {
     justify-content: space-around;
   }
-  .skill_item{
+  .skill_item {
     width: 400px;
   }
-
 }
-
-
